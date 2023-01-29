@@ -1,16 +1,27 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "./page.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
+          some sample text &nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
+        </p>
+        <p
+        className="hello"
+          style={{
+            color: `red`,
+            background: `yellow`,
+            fontSize: `50px`,
+            borderRadius: `50%`,
+          }}
+        >
+          I am a worrier
         </p>
         <div>
           <a
@@ -18,7 +29,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -30,7 +41,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+<div>Hello world</div>
       <div className={styles.center}>
         <Image
           className={styles.logo}
@@ -87,5 +98,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
